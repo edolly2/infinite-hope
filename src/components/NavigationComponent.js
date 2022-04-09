@@ -92,7 +92,7 @@ const NavigationComponent = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>
+              <NavLink className="nav-link-donate">
                 <NavigationLink className="NavigationLink" to="/donate">
                   Donate
                 </NavigationLink>
