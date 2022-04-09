@@ -1,12 +1,18 @@
-import CarouselComponent from "../components/CarouselComponent";
+import { Link } from "react-router-dom";
 import React from "react";
-
 const HomePage = () => {
   return (
     <div className="page">
       <main>
-        <h1>Revolutionize The Way You Donate</h1>
-        <CarouselComponent />
+        <div>
+          <h1>Support Your Local Community Today</h1>
+          <h2>Helping Secure A Better Tomorrow</h2>
+        </div>
+        <div>
+          <Link to="how-it-works">
+            <button>Learn More</button>
+          </Link>
+        </div>
       </main>
     </div>
   );
