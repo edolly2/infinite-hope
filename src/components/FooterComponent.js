@@ -7,6 +7,7 @@ import {
 } from "react-icons/bs";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
+import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -21,7 +22,7 @@ const FooterComponent = () => {
           <div className="col">
             <h4>Subscribe to Our Mailing List</h4>
             <input type="email" />
-            <button>Subscribe</button>
+            <Button color="primary">Subscribe</Button>
           </div>
           <div className="col">
             <h4>Site Map</h4>

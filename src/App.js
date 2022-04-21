@@ -15,14 +15,16 @@ function App() {
   return (
     <div className="App container" fluid>
       <HeaderComponent />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="how-it-works" element={<HowItWorksPage />} />
-        <Route path="how-to-help" element={<HowToHelpPage />} />
-        <Route path="donate" element={<DonatePage />} />
-      </Routes>
+      <div className="page">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="how-it-works" element={<HowItWorksPage />} />
+          <Route path="how-to-help" element={<HowToHelpPage />} />
+          <Route path="donate" element={<DonatePage />} />
+        </Routes>
+      </div>
       <FooterComponent />
     </div>
   );
