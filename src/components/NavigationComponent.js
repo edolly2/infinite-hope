@@ -1,5 +1,6 @@
 import { BiLogIn, BiLogOut } from "react-icons/bi";
 import {
+  Button,
   Collapse,
   Nav,
   NavItem,
@@ -9,8 +10,10 @@ import {
   NavbarToggler,
 } from "reactstrap";
 
+import { Link } from "react-router-dom";
 import { NavLink as NavigationLink } from "react-router-dom";
 import React from "react";
+import logo from "../shared/images/hope.png";
 import { useState } from "react";
 
 const NavigationComponent = () => {
@@ -52,10 +55,13 @@ const NavigationComponent = () => {
   return (
     <div>
       <Navbar color="light" expand="md" light>
-        <NavbarBrand href="/">Infinite Hope</NavbarBrand>
+        <NavbarBrand href="/" className="mx-5">
+          <img className="site-brand-logo" src={logo} alt="logo" />
+          Infinite Hope
+        </NavbarBrand>
         <NavbarToggler onClick={function noRefCheck() {}} />
         <Collapse navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="me-auto top-nav" navbar>
             <NavItem>
               <NavLink>
                 <NavigationLink className="NavigationLink" to="/">
@@ -92,10 +98,14 @@ const NavigationComponent = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link-donate">
-                <NavigationLink className="NavigationLink" to="/donate">
-                  Donate
-                </NavigationLink>
+              <NavLink>
+                {/* <NavigationLink className="NavigationLink" to="/donate"> */}
+                <Link to="donate">
+                  <Button className="custom-btn" color="warning">
+                    Donate
+                  </Button>
+                </Link>
+                {/* </NavigationLink> */}
               </NavLink>
             </NavItem>
             {/* <UncontrolledDropdown

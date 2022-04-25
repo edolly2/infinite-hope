@@ -1,11 +1,9 @@
 import NavigationComponent from "./NavigationComponent";
 import React from "react";
-import logo from "../shared/images/hope.png";
 
 const HeaderComponent = () => {
   return (
-    <header>
-      <img className="site-brand-logo" src={logo} alt="logo" />
+    <header className="sticky-top">
       <NavigationComponent />
     </header>
   );
