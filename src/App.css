@@ -12,6 +12,19 @@ a {
   pointer-events: none;
 }
 
+.form-label {
+  width: 8%;
+}
+
+/* .form-group {
+  display: flex;
+  justify-content: flex-start;
+} */
+
+/* .form-input {
+  width: 50%;
+} */
+
 .top-nav {
   display: flex;
   gap: 0.8rem;
